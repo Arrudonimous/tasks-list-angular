@@ -1,0 +1,14 @@
+.headerContainer{
+  background-color: #E0DCE4;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.headerTitleContainer{
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}

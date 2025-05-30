@@ -1,0 +1,12 @@
+.inputStyle {
+  width: 70%;
+  padding: 15px 18px;
+  font-size: 16px;
+  line-height: 140%;
+  font-weight: normal;
+  border: 0;
+  box-sizing: border-box;
+  transform: translateY(-50%);
+  position: absolute;
+  top: 50%;
+}
