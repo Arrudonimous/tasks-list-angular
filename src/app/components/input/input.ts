@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input as InputCore } from '@angular/core';
 
 @Component({
   selector: 'app-input',
@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './input.css'
 })
 export class Input {
-  
+  @InputCore() placeholder!: string;
 }

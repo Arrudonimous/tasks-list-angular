@@ -1,12 +1,28 @@
 .inputStyle {
-  width: 70%;
+  width: 100%;
   padding: 15px 18px;
   font-size: 16px;
   line-height: 140%;
   font-weight: normal;
-  border: 0;
+  border: 2px solid #E0DCE4;
   box-sizing: border-box;
-  transform: translateY(-50%);
-  position: absolute;
-  top: 50%;
+  border-radius: 8px;
+  font-family: "Inter", sans-serif;
+  transition: border-color 0.5s ease;
+}
+
+
+.inputStyle::placeholder {
+  opacity: 0.5;
+}
+
+:host{
+  display: flex;
+  flex: 1;
+}
+
+.inputStyle:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: #9359F3;
 }
