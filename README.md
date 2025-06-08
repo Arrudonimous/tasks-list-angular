@@ -80,4 +80,4 @@ The app supports:
 
 ### 📷 Preview
 
-![preview](https://github.com/Arrudonimous/tasks-list-angular/public/preview.png)
+![preview](https://tasks-list-angular.vercel.app/preview.png)
