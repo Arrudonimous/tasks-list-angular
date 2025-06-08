@@ -12,6 +12,7 @@ import { Task } from './models/task.model';
 })
 export class App implements OnInit {
   tasks: Task[] = [];
+  taskDescription: string = ''
 
   ngOnInit() {
     const stored = localStorage.getItem('tasks');
@@ -30,6 +31,7 @@ export class App implements OnInit {
 
     this.tasks.push(newTask);
     this.saveTasks();
+    this.taskDescription = ''
   };
 
   removeTask = (id: number) => {
@@ -44,6 +46,7 @@ export class App implements OnInit {
       ...mapTask,
       done: task.id === mapTask.id ? !task.done : mapTask.done,
     }))
+    this.saveTasks();
   }
 
   private saveTasks() {

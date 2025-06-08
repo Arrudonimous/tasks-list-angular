@@ -1,4 +1,4 @@
-import { Component, Input as InputCore } from '@angular/core';
+import { Component, EventEmitter, Input as InputCore, Output } from '@angular/core';
 import { Input } from '../input/input';
 import { Button } from '../button/button';
 import { TasksList } from '../tasks-list/tasks-list';
@@ -16,5 +16,6 @@ export class PageBody {
   @InputCore() removeTask! : (id: number) => void;
   @InputCore() changeTaskStatus! : (task: Task) => void;
 
-  taskDescription: string = ''
+  @InputCore() taskDescription!: string;
+  @Output() taskDescriptionChange = new EventEmitter<string>();
 }
