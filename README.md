@@ -1,59 +1,83 @@
-# PrimeiroProjeto
+# ✅ Task List - Angular
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.0.
+> 📚 Lista de tarefas criada para estudos com Angular, baseada em um layout da comunidade no Figma.
 
-## Development server
+[🇧🇷 Leia em Português](#pt-br) | [🇺🇸 Read in English](#en)
 
-To start a local development server, run:
+---
 
-```bash
-ng serve
-```
+## 🇧🇷 PT-BR
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+### 📌 Sobre o Projeto
 
-## Code scaffolding
+Este é um projeto de **lista de tarefas (to-do list)** desenvolvido com **Angular standalone components**, com foco em boas práticas de componentização, reatividade e estilo moderno.  
+O design foi inspirado no Figma da comunidade:  
+🎨 [Lista de Tarefas - Figma](https://www.figma.com/design/Rr1AH2h2CqnUIyGFJuYAN9/Lista-de-Tarefas--Community-?t=nUJCrRnr5Fsh5bNo-0)
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+A aplicação permite:
+- Criar tarefas
+- Marcar tarefas como concluídas
+- Remover tarefas
+- Armazenar localmente com `localStorage`
 
-```bash
-ng generate component component-name
-```
+---
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+### 🚀 Acesso ao Projeto
 
-```bash
-ng generate --help
-```
+📦 Repositório: [github.com/Arrudonimous/tasks-list-angular](https://github.com/Arrudonimous/tasks-list-angular)  
+🌐 Projeto online: [tasks-list-angular.vercel.app](https://tasks-list-angular.vercel.app)
 
-## Building
+---
 
-To build the project run:
+### 🛠️ Tecnologias
 
-```bash
-ng build
-```
+- Angular 17+
+- Standalone Components
+- TypeScript
+- Vercel (deploy)
+- Figma (referência visual)
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+---
 
-## Running unit tests
+### 📷 Preview
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+![preview](https://github.com/Arrudonimous/tasks-list-angular/public/preview.png)
 
-```bash
-ng test
-```
+---
 
-## Running end-to-end tests
+## 🇺🇸 EN
 
-For end-to-end (e2e) testing, run:
+### 📌 About the Project
 
-```bash
-ng e2e
-```
+This is a **To-Do List project** built using **Angular standalone components**, aimed at practicing component architecture, modern styling, and reactive data handling.  
+The design was inspired by a Figma community file:  
+🎨 [Task List - Figma](https://www.figma.com/design/Rr1AH2h2CqnUIyGFJuYAN9/Lista-de-Tarefas--Community-?t=nUJCrRnr5Fsh5bNo-0)
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+The app supports:
+- Creating tasks
+- Marking tasks as done
+- Removing tasks
+- Persistent storage using `localStorage`
 
-## Additional Resources
+---
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+### 🚀 Project Access
+
+📦 Repository: [github.com/Arrudonimous/tasks-list-angular](https://github.com/Arrudonimous/tasks-list-angular)  
+🌐 Live demo: [tasks-list-angular.vercel.app](https://tasks-list-angular.vercel.app)
+
+---
+
+### 🛠️ Tech Stack
+
+- Angular 17+
+- Standalone Components
+- TypeScript
+- Vercel (for deployment)
+- Figma (for design reference)
+
+---
+
+### 📷 Preview
+
+![preview](https://github.com/Arrudonimous/tasks-list-angular/public/preview.png)
