@@ -1,8 +1,12 @@
 <div class="pageBodyContainer">
   <div class="pageBody">
-    <div class="inputContainer">
-      <app-input placeholder="Adicione uma nova tarefa"></app-input>
-      <app-button buttonText="Criar" [showIcon]="true"></app-button>
+    <div class="inputRelativeParent">
+      <div class="inputContainer">
+        <app-input placeholder="Adicione uma nova tarefa"></app-input>
+        <app-button buttonText="Criar" [showIcon]="true"></app-button>
+        </div>
     </div>
+    <app-tasks-list></app-tasks-list>
+
   </div>
 </div>

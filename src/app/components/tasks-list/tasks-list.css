@@ -1,0 +1,74 @@
+.tasksListContainer{
+  display: flex;
+  margin-top: 90px;
+  flex-direction: column;
+  gap: 24px;
+}
+
+
+.tasksListHeader{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  color: #6B6572;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.tasksNumberTag{
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+
+.createdTasksNumber{
+  padding: 4px 8px;
+  border-radius: 99999px;
+  background-color: #DDD2EF;
+  color: #6F3CC3;
+}
+
+.doneTasksNumber{
+  padding: 4px 8px;
+  border-radius: 99999px;
+  background-color: #BFE3D0;
+  color: #2D6C4A;
+}
+
+
+.taskListBody{
+  display: flex;
+  border-top: 2px solid #E0DCE4;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  color: #6B6572;
+}
+
+.emptyTasksList{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 64px;
+  gap: 16px;
+}
+
+.emptyTasksListTextContainer{
+  display: flex;
+  flex-direction: column;
+}
+
+.emptyTasksListTitle{
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.emptyTasksListSubtitle{
+  margin: 0;
+  font-size: 14px;
+  font-weight: 400;
+}

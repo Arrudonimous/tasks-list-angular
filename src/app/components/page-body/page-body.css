@@ -8,7 +8,7 @@
   display: flex;
   width: 100%;
   max-width: 50vw;
-  position: relative;
+  flex-direction: column;
 }
 
 .inputContainer {
@@ -18,4 +18,10 @@
   width: 100%;
   gap: 8px;
   transform: translateY(-50%);
+}
+
+.inputRelativeParent{
+  display: flex;
+  width: 100%;
+  position: relative;
 }
