@@ -1,1 +1,6 @@
-<input class="inputStyle" placeholder="{{ placeholder }}"/>
+<input
+  class="inputStyle"
+  placeholder="{{ placeholder }}"
+  [value]="value"
+  (input)="onInput($event)"
+/>

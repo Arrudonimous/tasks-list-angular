@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-tasks-list',
@@ -7,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrl: './tasks-list.css'
 })
 export class TasksList {
+  @Input() tasks: { description: string; done: boolean, id: number }[] =[]
 
+  getDoneTasksQtd(){
+    return this.tasks.filter(task => task.done).length
+  }
 }

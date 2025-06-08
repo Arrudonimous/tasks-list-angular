@@ -1,4 +1,4 @@
-import { Component, Input as InputCore } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-button',
@@ -8,6 +8,6 @@ import { Component, Input as InputCore } from '@angular/core';
   standalone: true
 })
 export class Button {
-  @InputCore() buttonText!: string;
-  @InputCore() showIcon!: boolean;
+  @Input() buttonText!: string;
+  @Input() showIcon!: boolean;
 }
