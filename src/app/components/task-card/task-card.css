@@ -1,0 +1,29 @@
+.taskCardContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #E0DCE4;
+  border-radius: 8px;
+  color: #262428;
+  padding: 16px;
+  align-items: start;
+
+  button{
+    background-color: transparent;
+    border: 0;
+    height: 100%;
+  }
+}
+
+.taskDescription{
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+
+:host{
+  display: flex;
+  flex: 1;
+}

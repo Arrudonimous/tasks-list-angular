@@ -10,7 +10,10 @@
     </div>
   </div>
   <div class="taskListBody">
-    @if(tasks.length === 0){
+    @for (task of tasks; track task.id) {
+      <app-task-card [task]="task"/>
+    }
+    @empty {
       <div class="emptyTasksList">
         <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
@@ -22,7 +25,7 @@
           <p class="emptyTasksListTitle">Você ainda não tem tarefas cadastradas</p>
           <p class="emptyTasksListSubtitle">Crie tarefas e organize seus itens a fazer</p>
         </div>
-        </div>
+      </div>
     }
 
   </div>

@@ -43,9 +43,9 @@
   display: flex;
   border-top: 2px solid #E0DCE4;
   width: 100%;
-  align-items: center;
-  justify-content: center;
   color: #6B6572;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .emptyTasksList{
@@ -54,6 +54,7 @@
   align-items: center;
   padding: 64px;
   gap: 16px;
+  width: 100%;
 }
 
 .emptyTasksListTextContainer{

@@ -4,4 +4,8 @@ body{
   font-style: normal;
   margin: 0;
   background-color: #F0EDF2;
+
+  button:hover{
+    cursor: pointer;
+  }
 }
