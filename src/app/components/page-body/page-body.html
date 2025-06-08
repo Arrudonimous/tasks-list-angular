@@ -7,10 +7,10 @@
           (valueChange)="taskDescription = $event"
           placeholder="Adicione uma nova tarefa"
         />
-        <app-button buttonText="Criar" [showIcon]="true" (click)="createTask(taskDescription)"></app-button>
+        <app-button buttonText="Criar" [showIcon]="true" (click)="createTask(taskDescription)" />
         </div>
     </div>
-    <app-tasks-list [tasks]="tasks"></app-tasks-list>
+    <app-tasks-list [tasks]="tasks" [removeTask]="removeTask" />
 
   </div>
 </div>

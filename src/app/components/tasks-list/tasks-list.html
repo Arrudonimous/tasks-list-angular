@@ -11,7 +11,7 @@
   </div>
   <div class="taskListBody">
     @for (task of tasks; track task.id) {
-      <app-task-card [task]="task"/>
+      <app-task-card [task]="task" [removeTask]="removeTask"/>
     }
     @empty {
       <div class="emptyTasksList">

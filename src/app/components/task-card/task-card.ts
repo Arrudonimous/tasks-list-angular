@@ -12,4 +12,6 @@ export class TaskCard {
     id: 0,
     done: false
   };
+  @Input() removeTask!: (id: number) => void;
+
 }

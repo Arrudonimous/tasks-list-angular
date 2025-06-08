@@ -11,7 +11,8 @@ import { TasksList } from '../tasks-list/tasks-list';
 })
 export class PageBody {
   @InputCore() tasks: { description: string; done: boolean, id: number }[] = []
-  @InputCore() createTask! : (taskDescription: string) => void;
+  @InputCore() createTask!: (taskDescription: string) => void;
+  @InputCore() removeTask! : (id: number) => void;
 
   taskDescription: string = ''
 }

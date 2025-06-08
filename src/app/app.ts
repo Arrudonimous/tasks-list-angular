@@ -31,6 +31,13 @@ export class App implements OnInit {
     this.saveTasks();
   };
 
+  removeTask = (id: number) => {
+    if(!id) return
+
+    this.tasks = this.tasks.filter(task => task.id !== id);
+    this.saveTasks();
+  }
+
   private saveTasks() {
     localStorage.setItem('tasks', JSON.stringify(this.tasks));
   }
