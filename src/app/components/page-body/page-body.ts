@@ -2,6 +2,7 @@ import { Component, Input as InputCore } from '@angular/core';
 import { Input } from '../input/input';
 import { Button } from '../button/button';
 import { TasksList } from '../tasks-list/tasks-list';
+import { Task } from '../../models/task.model';
 
 @Component({
   selector: 'app-page-body',
@@ -10,9 +11,10 @@ import { TasksList } from '../tasks-list/tasks-list';
   styleUrl: './page-body.css'
 })
 export class PageBody {
-  @InputCore() tasks: { description: string; done: boolean, id: number }[] = []
+  @InputCore() tasks: Task[] = []
   @InputCore() createTask!: (taskDescription: string) => void;
   @InputCore() removeTask! : (id: number) => void;
+  @InputCore() changeTaskStatus! : (task: Task) => void;
 
   taskDescription: string = ''
 }

@@ -10,7 +10,7 @@
         <app-button buttonText="Criar" [showIcon]="true" (click)="createTask(taskDescription)" />
         </div>
     </div>
-    <app-tasks-list [tasks]="tasks" [removeTask]="removeTask" />
+    <app-tasks-list [tasks]="tasks" [removeTask]="removeTask" [changeTaskStatus]="changeTaskStatus"/>
 
   </div>
 </div>

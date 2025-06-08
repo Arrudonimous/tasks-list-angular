@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { TaskCard } from '../task-card/task-card';
+import { Task } from '../../models/task.model';
 
 @Component({
   selector: 'app-tasks-list',
@@ -8,8 +9,9 @@ import { TaskCard } from '../task-card/task-card';
   styleUrl: './tasks-list.css'
 })
 export class TasksList {
-  @Input() tasks: { description: string; done: boolean, id: number }[] =[]
+  @Input() tasks: Task[] =[]
   @Input() removeTask!: (id: number) => void;
+  @Input() changeTaskStatus!: (task: Task) => void;
 
   getDoneTasksQtd(){
     return this.tasks.filter(task => task.done).length

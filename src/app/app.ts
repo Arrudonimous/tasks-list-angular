@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Header } from './components/header/header';
 import { PageBody } from './components/page-body/page-body';
+import { Task } from './models/task.model';
 
 @Component({
   selector: 'app-root',
@@ -10,7 +11,7 @@ import { PageBody } from './components/page-body/page-body';
   styleUrl: './app.css'
 })
 export class App implements OnInit {
-  tasks: { description: string; done: boolean; id: number }[] = [];
+  tasks: Task[] = [];
 
   ngOnInit() {
     const stored = localStorage.getItem('tasks');
@@ -36,6 +37,13 @@ export class App implements OnInit {
 
     this.tasks = this.tasks.filter(task => task.id !== id);
     this.saveTasks();
+  }
+
+  changeTaskStatus = (task: Task) => {
+    this.tasks = this.tasks.map(mapTask => ({
+      ...mapTask,
+      done: task.id === mapTask.id ? !task.done : mapTask.done,
+    }))
   }
 
   private saveTasks() {

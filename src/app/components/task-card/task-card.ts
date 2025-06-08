@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Task } from '../../models/task.model';
 
 @Component({
   selector: 'app-task-card',
@@ -7,11 +8,12 @@ import { Component, Input } from '@angular/core';
   styleUrl: './task-card.css'
 })
 export class TaskCard {
-  @Input() task: { description: string; id: number; done: boolean } = {
+  @Input() task: Task = {
     description: '',
     id: 0,
     done: false
   };
   @Input() removeTask!: (id: number) => void;
+  @Input() changeTaskStatus!: (task: Task) => void;
 
 }

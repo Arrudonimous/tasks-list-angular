@@ -8,12 +8,20 @@
   color: #262428;
   padding: 16px;
   align-items: start;
+  border: 1px solid #D1CBD7;
+  gap: 12px;
 
   button{
     background-color: transparent;
     border: 0;
     height: 100%;
   }
+}
+
+.done{
+  background-color: #F0EDF2 !important;
+  text-decoration: line-through;
+  color: #6B6572;
 }
 
 .taskDescription{
